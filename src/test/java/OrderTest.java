@@ -24,6 +24,4 @@ public class OrderTest {
     $(Selectors.withText("Успешно!")).shouldBe(Condition.visible, Duration.ofSeconds(15));
 
 
-   // $("h2").shouldHave(Condition.text("Личный кабинет"), Duration.ofSeconds(15)).shouldBe(Condition.visible);
-
 }
