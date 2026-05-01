@@ -37,7 +37,7 @@ public class DeliveryPageTest {
         $("[data-test-id='phone'] input").setValue("+79229784864");
         $("[data-test-id='agreement']").click();
         $("button.button").click();
-        $(".notification_content")
+        $("[data-test-id='notification']")
                 .should(Condition.visible, Duration.ofSeconds(15))
                 .should(Condition.text("Встреча успешно забронирована на " + planningDate));
     }
